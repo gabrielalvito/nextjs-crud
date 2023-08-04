@@ -9,7 +9,7 @@ type Product = {
 };
 
 async function getProducts() {
-  const response = await fetch("http://localhost:5000/products", {
+  const response = await fetch("https://jsonserver-xi.vercel.app/products", {
     cache: "no-store",
   });
   return response.json();

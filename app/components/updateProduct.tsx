@@ -22,7 +22,7 @@ export default function UpdateProduct(product : Product) {
 
         setIsMutating(true);
 
-        await fetch(`http://localhost:5000/products/${product.id}`, {
+        await fetch(`https://jsonserver-xi.vercel.app/products/${product.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",

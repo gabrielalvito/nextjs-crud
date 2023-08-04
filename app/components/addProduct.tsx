@@ -16,7 +16,7 @@ export default function AddProduct() {
 
         setIsMutating(true);
 
-        await fetch("http://localhost:5000/products", {
+        await fetch("https://jsonserver-xi.vercel.app/products", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

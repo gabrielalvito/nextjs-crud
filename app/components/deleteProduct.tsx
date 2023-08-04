@@ -18,7 +18,7 @@ export default function DeleteProduct(product: Product) {
     async function handleDelete(productId: number) {
         setIsMutating(true);
 
-        await fetch(`http://localhost:5000/products/${productId}`, {
+        await fetch(`https://jsonserver-xi.vercel.app/products/${productId}`, {
             method: "DELETE",
         });
 
